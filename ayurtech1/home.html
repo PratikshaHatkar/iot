@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Ayurvedic Medicine Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Ayurvedic Medicine Finder</h2>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="container">
+    <h3>Find Ayurvedic Remedies</h3>
+    <input type="text" id="diseaseInput" placeholder="Enter disease or symptom">
+    <button onclick="getMedicine()">Search</button>
+
+    <div class="results">
+      <div class="section" id="remedies">
+        <h4>Suggested Remedies</h4>
+        <p id="remedies-list">Enter a disease to see suggestions.</p>
+      </div>
+      <div class="section" id="composition">
+        <h4>Medicine Composition</h4>
+        <p id="composition-list">Details will appear here.</p>
+      </div>
+      <div class="section" id="company">
+        <h4>Company</h4>
+        <p id="company-list">Company details will appear here.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
